@@ -1,8 +1,8 @@
 import { Typography } from "@/components/typography";
 
 export const metadata = {
-  title: "Terms of Service",
-  description: "Please review the terms of service for our website.",
+  title: "Privacy Policy",
+  description: "Please review the privacy policy for our website.",
 };
 
 export default function TermsPage() {
