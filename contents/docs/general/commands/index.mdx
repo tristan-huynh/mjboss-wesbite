@@ -1,0 +1,56 @@
+---
+title: Commands
+description: This section provides an overview of punishment commands.
+---
+
+
+<Note type="note" title="Note">
+  Commands will have 2 "arguments", which is a piece of information that can be used by the command to execute a special action:
+    1. The Required Argument, written in `[]`
+    2. The Optional Argument, written in `{}`
+</Note>
+
+## General Commands
+
+| Name        | Usage  | Description  |
+|-------------|--------|--------------|
+| ping | /ping | Shows the ping of the bot. |
+| kendale | /kendale | Kendale. |
+| status | /status | Shows the status of the bot. |
+| poll | /poll [question] [option1] [option2] \{option3} \{option4} \{option5} | Creates a poll with the specified question and options. |
+| say | /say [message] | Makes the bot say a message in the channel. |
+| userinfo | /userinfo [user] | Shows the information of a user. |
+| serverinfo | /serverinfo | Shows the information of the server. |
+| membercount | /membercount | Shows the number of members in the server. |
+| avatar | /avatar [user] | Shows the avatar of a user. |
+
+## Moderation Commands
+
+| Name        | Usage  | Description  |
+|-------------|--------|--------------|
+| ban | /ban [user] \{reason} | Bans a user. Only works if user is in server. |
+| kick | /kick [user] \{reason} | Kicks a user. |
+| warn user | /warn user [user] \{reason} | Warns a user. |
+| warn show | /warn show [user] | Shows the warnings of a user. |
+| purge channel | /purge channel [amount] | Purges the number of messages specified only between 1 and 100. |
+| purge user | /purge user [user] [amount] | Purges the number of messages specified only between 1 and 100 from a user. |
+| purge message | /purge message [message ID] | Purges a number of messages specified only between 1 and 100 to now. |
+| lockdown channel | /lockdown channel [channel] \{reason} | Locks down a channel. |
+| lockdown server | /lockdown server \{reason} | Locks down the server. |
+| unlock channel | /unlock channel [channel] \{reason} | Unlocks a channel. |
+| unlock server | /unlock server \{reason} | Unlocks the server. |
+| nickname | /nickname [user] [nickname] | Changes the nickname of a user. |
+
+## Role Commands
+
+| Name        | Usage  | Description  |
+|-------------|--------|--------------|
+| autorole show | /autorole show | Shows the autorole of the server. |
+| autorole set | /autorole set [role] | Sets the autorole of the server. |
+| autorole clear | /autorole clear | Removes the autorole of the server. |
+
+## Misellaneous Commands
+| Name        | Usage  | Description  |
+|-------------|--------|--------------|
+| leaderboard | /leaderboard | Shows the leaderboard of the server. |
+| togglelistener | /togglelistener | Toggles intent listener in guild. |

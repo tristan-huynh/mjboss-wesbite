@@ -1,0 +1,49 @@
+---
+title: Intents
+description: This section provides an overview of intents in the bot.
+---
+
+
+<Note type="note" title="Note">
+  To have intents enabled, you must enabled them through the <code>/togglelistener</code> command. This will allow the bot to listen to events in the guild, such as member updates, message reactions, etc. 
+  If you do not enable intents, the bot will not be able to perform certain actions or respond to certain commands.
+</Note>
+
+## Reaction Commands
+### Yes/No
+
+- **Trigger**: Messages containing `y/n`.  
+- **Behavior**: Bot adds 👍 and 👎 reactions automatically.  
+- **Example**:  
+  ```txt
+  User: Should we deploy the update? y/n
+  ```
+
+### Versus
+- **Trigger**: Messages containing `v/s`.
+- **Behavior**: Bot adds ◀ and ▶ reactions automatically.
+- **Example**:  
+  ```txt
+  User: Which is better, A or B? v/s
+  ```
+
+## Link Embeds
+
+When you post a support social link, the bot reformats with a rich embed.
+- **Trigger**: Messages containing `https://instagram.com`, `https://twitter.com`, or `https://reddit.com`.
+- **Behavior**: Bot creates an embed with a direct upload of the attached media embeded.
+- **Example**:  
+  ```txt
+  User: Check out our Instagram https://instagram.com/example
+  ```
+## Direct Interaction
+When you mention the bot directly with a question, it will respond with a helpful message.
+- **Trigger**: Messages starting with `@botname` followed by a question.
+- **Behavior**: Bot responds with a message indicating it is ready to help.
+- **Example**:  
+  ```txt
+  User: @botname How do I use this bot?
+  ```
+
+
+
